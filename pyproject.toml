@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "mobile-application-security-framework"
+version = "1.0.0"
+description = "Android manifest review and mobile security assessment reporting"
+requires-python = ">=3.10"
+dependencies = ["defusedxml>=0.7.1,<1"]
+[project.scripts]
+mobile-security = "mobile_security.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

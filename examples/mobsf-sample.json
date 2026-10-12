@@ -1,0 +1,12 @@
+{
+  "notice": "Illustrative training data only.",
+  "findings": [
+    {
+      "title": "Debuggable flag enabled",
+      "severity": "high",
+      "category": "Platform usage",
+      "description": "Sample manifest contains android:debuggable=true.",
+      "recommendation": "Disable debugging in release builds."
+    }
+  ]
+}
